@@ -24,7 +24,7 @@ export const meta = {
 // A number in the output is a pause before the next line.
 const SESSION: [string, number, (string | number)[] | null][] = [
   ["cat interests.txt", 0.15, ["binary exploitation", "LLM4Sec / AI", 3]],
-  ["cat tools.txt", 0.12, ["C / Python", "Linux / GDB / pwndbg / IDA", 5]],
+  ["cat skills.txt", 0.12, ["C/C++ / Python / Rust", 5]],
   ["clear", 0, null],
 ];
 
