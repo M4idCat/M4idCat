@@ -1,17 +1,21 @@
 # Banner artwork
 
-The banner is a static raster illustration generated with the built-in image-generation tool.
-Its appearance is inspired by full-color ASCII / ANSI art, including the visual style requested at https://ascii.rest/#ui.
-It is not a running ascii.rest component or a text-rendered animation.
+A static ASCII-style raster illustration made with the built-in image-generation tool.
+The final direction is a mature, gender-neutral adult cat, with a plain collar and a restrained silver, teal, and amber palette.
+This is not a running ASCII component or a text-rendered animation.
 
-## Final generation prompt
+## Reference image
 
-Use case: stylized-concept.
-Asset: finished panoramic GitHub profile banner, 3:1 wide composition, ideally 1536 by 512.
-Create exquisite, intricate, FULL-COLOR ASCII / ANSI character art of one charming actual cat wearing tasteful maid accessories. This is the final character-art banner, not a sketch or a conventional illustration with text overlaid.
-Medium: every visible part of the cat, lace, ribbons, jewelry, highlights, shadow, and decorative accents is built from very small, crisp, individually discernible monospaced ASCII glyphs on a consistent terminal character grid: . : ; + * = # % @ / \\ | ( ) _ - o. Dense, expertly placed multicolored glyphs describe soft fur, smooth contours, tonal volume, and tiny intricate details. Sophisticated demo-scene ANSI art aesthetic, high-resolution character shading, evocative of polished full-color ASCII art galleries such as ascii.rest. No simple wireframe outline.
-Subject: one lovely silver-and-white cat, compact feline proportions, natural cat face and paws, elegant triangular ears, expressive almond-shaped luminous cyan/sea-green eyes, delicate nose, whiskers. A luxurious scalloped ivory lace maid headband between its ears, intricate tiny lace loops and pearlescent beads, a deep violet satin ribbon bow and a small faceted amber/gold pendant at the neck, modest little lace bib. Accessories are unmistakable but graceful. Cute, poised, slightly mischievous. One paw rests forward, its long tail curls elegantly beside it.
-Composition: the seated cat fills most of the central third, with its curled tail extending toward the right; portrait entirely within safe margins. Carefully balanced wide negative space on both sides. A few sparse small geometric glyph sparkles and understated cyan/violet ornamental character trails make the wide composition intentional. Rich near-black midnight-navy background. Gentle mint/cyan illumination on one side, lavender/rose rim light on the other; pearl-white fur, lavender lace shadows, violet ribbons, small warm amber jewelry accents.
-Quality: meticulously crafted and visually rich at GitHub profile scale, attractive silhouette, detailed jewel and lace, clean crisp characters, restrained colorful accents, premium character art. All art should convincingly be made of characters, with the grid and the dark gaps between glyphs visible even on the face. Sharp ASCII texture, no blur, no photo, no smooth painted surfaces, no large square pixel blocks.
-NO WORDS, NO NAME LETTERING, NO BIG ASCII TITLE, NO TERMINAL WINDOW, NO panels, NO research text, NO logos, NO watermarks, NO extra cats, NO human or humanlike girl. Output only the finished wide banner.
+The previous banner was used as an edit target to retain its detailed character texture and wide composition:
+https://github.com/M4idCat/M4idCat/blob/5fdbc2494cde38651baba0fdddcca8f0fd4751be/assets/maid-cat.png
+
+## Final edit prompt
+
+Use case: style-transfer / precise-object-edit.
+Edit target: attached existing GitHub banner. Keep its wide 3:1 aspect ratio, near-black navy background, exceptionally detailed multicolored ASCII/ANSI glyph texture, and central cat composition. The result must be a finished banner, made visually out of crisp tiny monospaced characters.
+Change the character and styling substantially: a mature, gender-neutral ADULT silver/charcoal tabby cat with realistic feline proportions. A longer, leaner body, normally sized head, angular mature muzzle, natural small almond-shaped amber/teal eyes, calm observant expression, ordinary adult paws, and an elegant relaxed tail. Animal anatomy, not an anthropomorphic character. Poised, quiet, intelligent, understated. A tasteful simple dark leather collar with ONE small flat brushed-metal geometric tag is the only accessory.
+Completely remove all maid costume elements, bonnet, lace, bows, pearls, jewelry chains, ruffles, apron, tail ribbon, draped ornamental chains, and fairy-tale decorations. No gender-coded styling. No eyelashes, oversized eyes, plush kitten head, chibi proportions, baby features, cute doll styling, or coy head tilt.
+Recompose the adult cat as a poised relaxed sphinx-like loaf, facing the viewer at a slight three-quarter angle. Make the silhouette distinctly feline and mature. Keep its whole ears and tail within the image, with comfortable space above. Render fur and shadows through rich dense ASCII character shading, not smooth painting and not a sparse outline drawing.
+Palette: sophisticated charcoal, silver, slate blue, muted teal/cyan rim lighting, a few restrained warm amber accents. The image should remain visibly colorful, with subtle beautifully graded colored glyphs, but no pink/purple confectionery or glittering jewelry. Dark background with plenty of clean negative space. Replace ornate side decorations with very sparse tiny geometric ASCII points and faint short horizontal character trails, a subtle computational-art atmosphere.
+NO TEXT, no words, no titles, no fake terminal panel, no labels, no logos. Preserve the refined level of detail and sharp character-based texture. The mood should feel like a mature developer's personal profile: balanced, reserved, quietly distinctive.
 
