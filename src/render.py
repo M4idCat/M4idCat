@@ -89,6 +89,7 @@ def cat_art(theme):
 frames = json.loads((ROOT/'src/frames.json').read_text(encoding='utf-8'))
 for theme,p in THEMES.items():
     rendered=[]
+    still_saved=False
     for i, terminal in enumerate(frames):
         im=Image.new('RGB',(1280,440),p['bg']); d=ImageDraw.Draw(im)
         d.line((32,32,1248,32),fill=p['line'])
@@ -103,8 +104,11 @@ for theme,p in THEMES.items():
         d.line((32,406,1248,406),fill=p['line'])
         d.text((36,418),'y4ng.cn',font=font(11),fill=p['muted'])
         d.text((1017,418),'C/C++ / Python / Rust',font=font(11),fill=p['muted'])
-        if i==0: im.save(OUT/f'banner-{theme}.png')
+        if not still_saved and 'C/C++ / Python / Rust' in terminal and 'clear' not in terminal:
+            im.save(OUT/f'banner-{theme}.png')
+            still_saved=True
         rendered.append(im)
+    assert still_saved, 'The reduced-motion banner must show interests and skills.'
     # One shared palette avoids color shimmer between frames.
     pal=rendered[0].quantize(colors=128)
     indexed=[f.quantize(palette=pal,dither=Image.Dither.NONE) for f in rendered]

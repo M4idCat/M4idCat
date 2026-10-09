@@ -10,3 +10,5 @@ python src/render.py
 ```
 
 The renderer uses 0xProto Nerd Font Mono or Consolas on Windows, or DejaVu Sans Mono on Linux. Generated `src/frames.json` is an intermediate file.
+
+The profile selects a still PNG when the visitor prefers reduced motion. Each still shows both research interests and skills; other visitors see the animated terminal. The image alternative text also includes both lists.
